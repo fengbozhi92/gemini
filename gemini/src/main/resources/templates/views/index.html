@@ -3,8 +3,8 @@
   
   <head>
     <title>index</title>
-    <link rel="stylesheet" type="text/css" th:href="@{/gemini/common/css/gemini.css}"/>
-    <link rel="stylesheet" type="text/css" th:href="@{/gemini/common/css/gemini-dic.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/static/gemini/common/css/gemini.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/static/gemini/common/css/gemini-dic.css}"/>
     <style type="text/css">
       nav{
         background-color: #333;
@@ -46,14 +46,15 @@
       gemini
     </header>
     <div class="content">
-      123
+     <div th:text="${session.uname}">
+     </div>
     </div>
     <div th:include="views/layout/layout :: copy"></div>
     
-    <script type="text/javascript" th:src="@{/gemini/common/js/jquery-1.11.0.min.js}"></script>
-    <script type="text/javascript" th:src="@{/gemini/common/js/gemini-core.js}"></script>
-    <script type="text/javascript" th:src="@{/gemini/common/js/gemini-helper.js}"></script>
-    <script type="text/javascript" th:src="@{/gemini/common/js/gemini-style.js}"></script>
+    <script type="text/javascript" th:src="@{/static/gemini/common/js/jquery-1.11.0.min.js}"></script>
+    <script type="text/javascript" th:src="@{/static/gemini/common/js/gemini-core.js}"></script>
+    <script type="text/javascript" th:src="@{/static/gemini/common/js/gemini-helper.js}"></script>
+    <script type="text/javascript" th:src="@{/static/gemini/common/js/gemini-style.js}"></script>
     <script></script>
   
   </body>
