@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  
+  <head>
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/gemini/common/css/gemini.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/gemini/common/css/gemini-dic.css}"/>
+    <style type="text/css">
+      nav{
+        background-color: #333;
+        opacity: 0.6;
+        position:absolute;
+        top: 0;
+        height: 40px;
+        width: 100%;
+        color: white;
+      }
+      header{
+        height: 200px;
+        width: 100%;
+      }
+      .content, .nav-content, .footer-content{
+        width: 1000px;
+        margin: 0 auto 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .login{
+        float: right;
+        width: 300px;
+        height: 30px;
+        line-height: 40px;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <nav>
+      <div class="nav-content clearfix">
+        <div class="login">
+          <a href="#" class="block">login</a>
+        </div>
+      </div>
+    </nav>
+    <header>
+      gemini
+    </header>
+    <div class="content">
+      aaaaaaaaaaaaaaaaaaaaaaaa
+    </div>
+    <div th:include="views/layout/layout :: copy"></div>
+    
+    <script type="text/javascript" th:src="@{/gemini/common/js/jquery-1.11.0.min.js}"></script>
+    <script type="text/javascript" th:src="@{/gemini/common/js/gemini-core.js}"></script>
+    <script type="text/javascript" th:src="@{/gemini/common/js/gemini-helper.js}"></script>
+    <script type="text/javascript" th:src="@{/gemini/common/js/gemini-style.js}"></script>
+    <script></script>
+  
+  </body>
+</html>
